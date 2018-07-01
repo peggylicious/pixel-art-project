@@ -85,7 +85,7 @@ function makeGrid(){
         chosenColor = $('#borderColor').val();
         $('table, tr, td').css('border', chosenWidth + 'px solid ' + chosenColor)
     })
-    // Change Border Color
+    // Change Border Width
     var chosenWidth;
     $('#borderWidth').on('change', function(){
         
