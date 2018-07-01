@@ -59,7 +59,7 @@ function makeGrid(){
     let eraseCell = $('.eraser-button');
     $(eraseCell).on('click', function(event){
         event.preventDefault();
-        cleanCell()
+        cleanCell();
     });
 
     // Remove border
@@ -84,9 +84,9 @@ function makeGrid(){
     $('#borderColor').on('change', function(){
         chosenColor = $('#borderColor').val();
         if (chosenColor && !chosenWidth){
-            $('table, tr, td').css('border', '1px solid ' + chosenColor)
+            $('table, tr, td').css('border', '1px solid ' + chosenColor);
         }else{
-            $('table, tr, td').css('border', chosenWidth + 'px solid ' + chosenColor)
+            $('table, tr, td').css('border', chosenWidth + 'px solid ' + chosenColor);
         }
     })
     // Change Border Width
