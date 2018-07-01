@@ -43,7 +43,7 @@ function makeGrid(){
     // Button event to change color
     var paintCell;    
     paintCell = $('#colorPicker');
-    $(paintCell).on('change', function(  ){
+    $(paintCell).on('change', function{
         addColor();
     });
 
@@ -99,7 +99,6 @@ function makeGrid(){
         }else{
             $('table, tr, td').css('border', chosenWidth + 'px solid ' + chosenColor);
         }
-        // chosenWidth = $('#borderWidth').val();
     })
 }
 
